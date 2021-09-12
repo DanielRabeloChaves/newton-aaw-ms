@@ -1,0 +1,38 @@
+### GET LISTAR
+ 
+GET http://localhost:8080/users
+
+
+### GET with invalid ID
+
+GET http://localhost:8080/users/1
+
+
+### POST new User - CRIAR
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "password": "senhaAleatoriaQualquer123",
+    "email": "john.doe@newtonpaiva.br",
+    "mobile": "+55(31)99134-5421"
+}
+
+
+### PUT update user - ATUALIZAR se atualizar oq n existe erro 404
+
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+    "name": "Daniel Rabelo",
+    "password": "senhaAleatoriaQualquer11231243",
+    "email": "danielrabelo@newtonpaiva.br",
+    "mobile": "+55(31)52134-5451"
+}
+
+### DELETE  - DELETAR se deletar oq n existe erro 404
+
+DELETE http://localhost:8080/users/2
