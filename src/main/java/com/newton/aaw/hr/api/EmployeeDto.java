@@ -2,6 +2,7 @@ package com.newton.aaw.hr.api;
 
 import java.time.LocalDateTime;
 
+import com.newton.aaw.hr.api.enums.Gender;
 import com.newton.aaw.hr.domain.entity.Employee;
 
 import lombok.AllArgsConstructor;
@@ -20,7 +21,7 @@ public class EmployeeDto {
 	private String firstName; 
 	private String lastName;
 	private LocalDateTime dateOfBirth;
-	private String gender;
+	private Gender gender;
 	private LocalDateTime startDate;
 	private LocalDateTime endDate; 
 	private String position; 

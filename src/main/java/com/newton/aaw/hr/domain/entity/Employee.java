@@ -2,6 +2,8 @@ package com.newton.aaw.hr.domain.entity;
 
 import java.time.LocalDateTime;
 
+import com.newton.aaw.hr.api.enums.Gender;
+
 import org.springframework.data.annotation.Id;
 
 import com.newton.aaw.hr.api.EmployeeDto;
@@ -23,7 +25,7 @@ public class Employee {
 	private String firstName; 
 	private String lastName;
 	private LocalDateTime dateOfBirth;
-	private String gender;
+	private Gender gender;
 	private LocalDateTime startDate;
 	private LocalDateTime endDate; 
 	private String position; 

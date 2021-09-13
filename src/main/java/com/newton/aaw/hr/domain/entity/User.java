@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import org.springframework.data.annotation.Id;
 
 import com.newton.aaw.hr.api.UserDto;
+import com.newton.aaw.hr.api.enums.Role;
+import com.newton.aaw.hr.api.enums.Status;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,8 +30,8 @@ public class User {
 	private LocalDateTime createAt; // Variavel para saber a data de quando o User vai ser criado
 	private LocalDateTime modifieAt; // Variavel para saber a data de quando o User vai ser criado
 	
-	private String status;          // LAB 3
-	private String role;           // LAB 3
+	private Status status;          // LAB 3
+	private Role role;           // LAB 3
 	
 	public User(UserDto userDto) { // Construtor passando Dto como parametro
 		this.id = userDto.getId();

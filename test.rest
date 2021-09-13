@@ -18,8 +18,8 @@ Content-Type: application/json
     "password": "senhaAleatoriaQualquer123",
     "email": "john.doe@newtonpaiva.br",
     "mobile": "+55(31)99134-5421",
-    "status": "qualquer",
-    "role": "roleExemplo"
+    "status": "INACTIVE",
+    "role": "ADMIN"
 }
 
 ### POST new User - CRIAR
@@ -32,13 +32,13 @@ Content-Type: application/json
     "password": "senhaAleeqweqtoriaQualquer123",
     "email": "danielRABELO@newtonpaiva.br",
     "mobile": "+55(31)99534-5728",
-    "status": "qualquer123",
-    "role": "roleExemplo4256"
+    "status": "ACTIVE",
+    "role": "READ"
 }
 
 ### PUT update user - ATUALIZAR se atualizar oq n existe erro 404
 
-PUT http://localhost:8080/users/613e9040e348e16a653dad3a
+PUT http://localhost:8080/users/613fdfccdc4d7f6ba40befbc
 Content-Type: application/json
 
 {
@@ -46,17 +46,13 @@ Content-Type: application/json
     "password": "senhaAleatoriaQualquer11231243",
     "email": "danielrabelo@newtonpaiva.br",
     "mobile": "+55(31)52134-5451",
-    "status": "qualquertESTE",
-    "role": "roleExemploTeste"
+    "status": "BLOCKED",
+    "role": "MODIFY"
 }
 
 ### DELETE  - DELETAR se deletar oq n existe erro 404
 
-DELETE http://localhost:8080/users/613e8ae31f6d8909f7681d68
-
-
-
-
+DELETE http://localhost:8080/users/613fdfdadc4d7f6ba40befbd
 
 
 
@@ -84,8 +80,8 @@ Content-Type: application/json
 {
     "firstName": "Daniel",
     "lastName": "Rabelo",
-    "gender": "MASC",
     "position": "Contagem",
+    "gender": "MASC",
     "monthlySalary": "123.66",
     "hourSalary": "1500.00",
     "area": "Analista de Sistema"
@@ -99,8 +95,8 @@ Content-Type: application/json
 {
     "firstName": "Cristiana",
     "lastName": "Rodrigues",
-    "gender": "FEM",
     "position": "Lisboa",
+    "gender": "FEM",
     "monthlySalary": "823.66",
     "hourSalary": "5000.00",
     "area": "Engenharia"
@@ -109,14 +105,14 @@ Content-Type: application/json
 
 ### PUT update user - ATUALIZAR se atualizar oq n existe erro 404
 
-PUT http://localhost:8080/employees/613e8c87e29ba47111cc1255
+PUT http://localhost:8080/employees/613fdd2b56c90f79d982f5e9
 Content-Type: application/json
 
 {
     "firstName": "Diego",
     "lastName": "Rafael",
-    "gender": "MASC",
     "position": "Contagem",
+    "gender": "MASC",
     "monthlySalary": "500.66",
     "hourSalary": "6500.00",
     "area": "Advogado"
@@ -125,4 +121,4 @@ Content-Type: application/json
 
 ### DELETE  - DELETAR se deletar oq n existe erro 404
 
-DELETE http://localhost:8080/employees/613e8b0f1f6d8909f7681d69
+DELETE http://localhost:8080/employees/613fdd2c56c90f79d982f5ea

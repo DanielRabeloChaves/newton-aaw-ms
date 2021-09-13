@@ -23,7 +23,6 @@ public class EmployeeService {
 		
 		public Employee create(Employee e) { 
 			
-			
 			e.setStartDate(LocalDateTime.now()); 
 			e.setEndDate(LocalDateTime.now()); 
 			e.setDateOfBirth(LocalDateTime.now()); 
@@ -46,8 +45,7 @@ public class EmployeeService {
 			existing.setHourSalary(e.getHourSalary());
 			existing.setArea(e.getArea());
 			
-			
-			existing.setDateOfBirth(LocalDateTime.now()); 
+			existing.setEndDate(LocalDateTime.now()); 
 			
 			employeeRepository.save(existing); 
 			
@@ -64,15 +62,12 @@ public class EmployeeService {
 			return employee.get(); 
 		}
 		
-		
 		public List<Employee> getAll(){ 
 			
 			return employeeRepository.findAll();  
 		}
 		
-		
 		public void delete(String id) { 
-			
 			
 			get(id); 
 			
