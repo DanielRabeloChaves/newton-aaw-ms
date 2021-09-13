@@ -5,7 +5,7 @@ GET http://localhost:8080/users
 
 ### GET with invalid ID
 
-GET http://localhost:8080/users/1
+GET http://localhost:8080/users/613e7127fc6ca918df35b69f
 
 
 ### POST new User - CRIAR
@@ -17,22 +17,112 @@ Content-Type: application/json
     "name": "John Doe",
     "password": "senhaAleatoriaQualquer123",
     "email": "john.doe@newtonpaiva.br",
-    "mobile": "+55(31)99134-5421"
+    "mobile": "+55(31)99134-5421",
+    "status": "qualquer",
+    "role": "roleExemplo"
+}
+
+### POST new User - CRIAR
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Daniel Rabelo",
+    "password": "senhaAleeqweqtoriaQualquer123",
+    "email": "danielRABELO@newtonpaiva.br",
+    "mobile": "+55(31)99534-5728",
+    "status": "qualquer123",
+    "role": "roleExemplo4256"
+}
+
+### PUT update user - ATUALIZAR se atualizar oq n existe erro 404
+
+PUT http://localhost:8080/users/613e9040e348e16a653dad3a
+Content-Type: application/json
+
+{
+    "name": "Diego Rafael",
+    "password": "senhaAleatoriaQualquer11231243",
+    "email": "danielrabelo@newtonpaiva.br",
+    "mobile": "+55(31)52134-5451",
+    "status": "qualquertESTE",
+    "role": "roleExemploTeste"
+}
+
+### DELETE  - DELETAR se deletar oq n existe erro 404
+
+DELETE http://localhost:8080/users/613e8ae31f6d8909f7681d68
+
+
+
+
+
+
+
+
+
+
+
+############# E M P L O Y E E ##############
+
+### GET LISTAR
+ 
+GET http://localhost:8080/employees
+
+
+### GET with invalid ID
+
+GET http://localhost:8080/employees/613e7127fc6ca918df35b69f
+
+
+### POST new User - CRIAR
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "firstName": "Daniel",
+    "lastName": "Rabelo",
+    "gender": "MASC",
+    "position": "Contagem",
+    "monthlySalary": "123.66",
+    "hourSalary": "1500.00",
+    "area": "Analista de Sistema"
+}
+
+### POST new User - CRIAR
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "firstName": "Cristiana",
+    "lastName": "Rodrigues",
+    "gender": "FEM",
+    "position": "Lisboa",
+    "monthlySalary": "823.66",
+    "hourSalary": "5000.00",
+    "area": "Engenharia"
 }
 
 
 ### PUT update user - ATUALIZAR se atualizar oq n existe erro 404
 
-PUT http://localhost:8080/users/1
+PUT http://localhost:8080/employees/613e8c87e29ba47111cc1255
 Content-Type: application/json
 
 {
-    "name": "Daniel Rabelo",
-    "password": "senhaAleatoriaQualquer11231243",
-    "email": "danielrabelo@newtonpaiva.br",
-    "mobile": "+55(31)52134-5451"
+    "firstName": "Diego",
+    "lastName": "Rafael",
+    "gender": "MASC",
+    "position": "Contagem",
+    "monthlySalary": "500.66",
+    "hourSalary": "6500.00",
+    "area": "Advogado"
 }
+
 
 ### DELETE  - DELETAR se deletar oq n existe erro 404
 
-DELETE http://localhost:8080/users/2
+DELETE http://localhost:8080/employees/613e8b0f1f6d8909f7681d69
