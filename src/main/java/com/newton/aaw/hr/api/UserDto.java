@@ -24,6 +24,9 @@ public class UserDto {
 	private LocalDateTime createAt; // Variavel para saber a data de quando o User vai ser criado
 	private LocalDateTime modifieAt; // Variavel para saber a data de quando o User vai ser criado
 	
+	private String status;          // LAB 3
+	private String role;           // LAB 3
+	
 	// Construtor Entidade para DTO
 	public UserDto(User u) {
 		this.id = u.getId();
@@ -33,6 +36,8 @@ public class UserDto {
 		this.mobile = u.getMobile();
 		this.createAt = u.getCreateAt();
 		this.modifieAt = u.getModifieAt();
+		this.status = u.getStatus();
+		this.role = u.getRole();
 	}
 	
 }

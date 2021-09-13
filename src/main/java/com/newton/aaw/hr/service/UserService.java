@@ -43,6 +43,9 @@ public class UserService {
 			existing.setPassword(u.getPassword());
 			existing.setEmail(u.getEmail());
 			existing.setMobile(u.getMobile());
+			existing.setStatus(u.getStatus());
+			existing.setRole(u.getRole());
+			
 			
 			// Para criar seta os dois ModifieAt e CreateAt, para modificar(update seta apenas o ModifieAt)
 			existing.setModifieAt(LocalDateTime.now()); // || // vai atualizar a data de modificao do objeto

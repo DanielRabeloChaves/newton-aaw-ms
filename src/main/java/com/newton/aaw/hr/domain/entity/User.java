@@ -28,11 +28,16 @@ public class User {
 	private LocalDateTime createAt; // Variavel para saber a data de quando o User vai ser criado
 	private LocalDateTime modifieAt; // Variavel para saber a data de quando o User vai ser criado
 	
+	private String status;          // LAB 3
+	private String role;           // LAB 3
+	
 	public User(UserDto userDto) { // Construtor passando Dto como parametro
 		this.id = userDto.getId();
 		this.name = userDto.getName();
 		this.password = userDto.getPassword();
 		this.email = userDto.getEmail();
 		this.mobile = userDto.getMobile();
+		this.status = userDto.getStatus();
+		this.role = userDto.getRole();
 	}
 }
